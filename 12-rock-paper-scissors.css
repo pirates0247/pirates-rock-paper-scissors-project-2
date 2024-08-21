@@ -1,0 +1,106 @@
+body{
+  background-color: rgb(25,25,25);
+  font-family: arial;
+  padding-left: 25px;
+  position: relative;
+}
+.div1{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  position: absolute;
+  top:115px;
+  left:525px;
+}
+@media (max-width:1000px){
+  .div1{
+    left:20px;
+  }
+}
+.title{
+  font-weight: bold;
+  font-size: 30px;
+}
+.div2{
+  display: flex;
+  flex:1;
+}
+.div3{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+.div4{
+  display: flex;
+  flex:1;
+}
+.move-button{
+  height:120px;
+  width:120px;
+  background-color: transparent;
+  border: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 60px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+img{
+  height:50px;
+}
+p{
+  color: white;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.result-line{
+  font-weight: bold;
+  font-size: 27px;
+}
+.move-result,
+.result2-line{
+  font-size: 25px;
+}
+.move-result{
+  margin-top: 28px;
+}
+.result2-line{
+  margin-top: 28px;
+  margin-bottom: 27px;
+}
+.reset-line{
+  color: rgb(255, 213, 0);
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.reset-button,
+.auto-play-button{
+  padding:10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 2px;
+}
+.reset-button{
+  margin-right: 15px;
+  background-color: rgb(255, 213, 0);
+}
+.reset-button:hover,
+.auto-play-button:hover{
+  border:solid;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: rgb(255, 213, 0);
+  background-color: white;
+}
+.auto-play-button{
+  background-color: rgb(97, 190, 97);
+}
+.is-clicked{
+  background-color: red;
+  color:black;
+}
+
+

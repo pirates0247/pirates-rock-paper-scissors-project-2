@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirates's Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="12-rock-paper-scissors.css">
+  </head>
+  <body>
+    <div class="div1">
+      <p class="title">Rock Paper Scissors Game</p>
+      <div class="div2">
+      <button class="js-move-button move-button" onclick="
+      playGame('rock');
+      resetAfter('Score Counting...');
+      "><img src="rock-emoji.png"></button>
+      <button class="js-move-button move-button" onclick="
+      playGame('paper');
+      resetAfter('Score Counting...');
+      "><img src="paper-emoji.png"></button>
+      <button class="js-move-button move-button" onclick="
+      playGame('scissors');
+      resetAfter('Score Counting...');
+      "><img src="scissors-emoji.png"></button>
+      </div>
+      <div class="div3">
+        <p class="js-result-line result-line"></p>
+        <p class="js-move-result move-result"></p>
+        <p class="js-result2-line result2-line"></p>
+        <p class="js-reset-line reset-line"></p>
+      </div>
+      <div class="div4">
+      <button class="js-reset-button reset-button" onclick="
+      score.wins=0;
+      score.losses=0;
+      score.ties=0;
+      resetAfter('Score Resetted.');
+      updateCalculation();
+      localStorage.removeItem('scores');
+      ">Reset Score</button>
+      <button class="js-auto-play-button auto-play-button" onclick="autoPlay();clickedButton();">
+        Auto Play
+      </button>
+      </div>
+    </div>
+    <script src="12-rock-paper-scissors.js">
+    </script>
+  </body>
+</html>
